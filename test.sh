@@ -7,7 +7,7 @@ cd "$(dirname "$0")"
 find . -mindepth 1 -maxdepth 1 -type d -regextype posix-extended -regex './[0-9]+' -exec rm -rf {} +
 
 # Regenerate repo contents.
-NUM_DIRS=20 python3 file.py
+NUM_DIRS=500 python3 file.py
 
 # Stage all changes in the repo.
 git add --all
